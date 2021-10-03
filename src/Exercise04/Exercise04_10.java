@@ -1,4 +1,3 @@
-
 package Exercise04;
 
 /**
@@ -12,10 +11,10 @@ package Exercise04;
 public class Exercise04_10 {
     public static void main(String[] args){
         
-        //Display numbers
-        final int Display_Number = 10;
+        // Declaring constant variable NUMBERS_PER_LINE that stores no. of numbers to be displayed per line
+        final int NUMBERS_PER_LINE = 10;
         
-        //count the number which divisible by 5 and 6
+        // Declaring count variable that will count the numbers which are divisible by 5 and 6 both from 100 to 1000
         int count = 0;
         
         //Test numbers from 100 to 1000
@@ -24,7 +23,9 @@ public class Exercise04_10 {
             //test number for it is divisible by 5 and 6
             if(i % 5 == 0 && i % 6 == 0){
                 //increment count
-                if(count % Display_Number == 0)
+                count++;
+
+                if(count % NUMBERS_PER_LINE == 0)
                     System.out.println(i);
                 else
                     System.out.print(i + " ");

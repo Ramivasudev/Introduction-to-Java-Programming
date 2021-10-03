@@ -11,7 +11,7 @@ Write a program that prompts the user to enter the starting velocity v0 in meter
 second, the ending velocity v1 in meters/second, and the time span t in seconds,
 and displays the average acceleration.
 */
-package chapter2;
+package Exercise02;
 import java.util.Scanner;
 
 public class Exercise02_09 {

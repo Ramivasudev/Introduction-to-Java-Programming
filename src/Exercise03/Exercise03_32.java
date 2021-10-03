@@ -18,34 +18,35 @@ import java.util.Scanner;
  *         p0, p1, and p2 and displays whether p2 is on the left of the line
  *         from p0 to p1, on the right, or on
  */
+
 public class Exercise03_32 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter three points for p0, p1, and p2:"); // enter the three points for p0, p1, and p2
-		float x0, x1, x2, y0, y1, y2, point; // store points
+
+		// Asking the user to enter the three points p0, p1, and p2
+		System.out.print("Enter three points for p0, p1, and p2: ");
+		// Variables to store co-ordinates of these points
+		float x0, x1, x2, y0, y1, y2, point;
 		// scanning inputs from user
 		x0 = sc.nextFloat();
-		x1 = sc.nextFloat();
-		x2 = sc.nextFloat();
 		y0 = sc.nextFloat();
+		x1 = sc.nextFloat();
 		y1 = sc.nextFloat();
+		x2 = sc.nextFloat();
 		y2 = sc.nextFloat();
-		point = (x1 - x0) * (y2 - y0) - (x2 - x0) * (y1 - y0); // point position
+
+		// Finding point position w.r.t line
+		point = (x1 - x0) * (y2 - y0) - (x2 - x0) * (y1 - y0);
 
 		// display result
 		if (point > 0) {
-			System.out.println("(" + x2 + "," + y2 + ") is on the" + ("left side of the")
-					+ ("line from (" + x0 + "," + y0 + ") to (" + x1 + "," + y1 + ")"));
-		} else if (point == 0) {
-			System.out.println("(" + x2 + "," + y2 + ") is on the"
-					+ ("line from (" + x0 + "," + y0 + ") to (" + x1 + "," + y1 + ")"));
+			System.out.println("p2 is on the left side of the line");
+		} 
+		else if (point == 0) {
+			System.out.println("p2 is on the same line");
 		}
-
 		else {
-			System.out.println("(" + x2 + "," + y2 + ") is on the" + ("right side of the")
-					+ ("line from (" + x0 + "," + y0 + ") to (" + x1 + "," + y1 + ")"));
-
+			System.out.println("p2 is on the right side of the line");
 		}
-
 	}
 }

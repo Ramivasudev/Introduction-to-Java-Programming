@@ -1,0 +1,37 @@
+/***
+ * (Use the Math.sqrt method ) Write a program that prints the following table
+ * 
+    using the sqrt method in the Math class.
+
+    Number    SquareRoot
+    0          0.0000
+    2          1.4142
+    .          ..
+    18         4.2426
+    20         4.4721
+  
+ *  */ 
+/**
+ * @author Atharva Joshi-D21CS105
+ * @email d21cs105@charusat.edu.in
+ */
+
+package Exercise05;
+
+
+
+public class Exercise05_18 {
+    public static void main(String[] args) {
+        
+        
+
+        System.out.println("Number           SquareRoot");      //Display Table Heading
+
+        for(int i = 0; i < 21; i+=2 )                           //run for loop
+        {
+        System.out.printf("%-15d%6.1f\n", i , Math.sqrt(i));    //Display result
+        }
+    }
+
+    
+}

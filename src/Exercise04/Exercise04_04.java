@@ -22,15 +22,14 @@ public class Exercise04_04 {
 		final double KILO = 1.609; 
 
 		// the head display
-		System.out.println(
-			"Miles\tKilometers");
+		System.out.println("Miles\tKilometers");
 
-		//converting miles into kilometer
-		for (int i = 1; i <= 20; i++) {
-            //printing miles and giving spaces
-            System.out.print(i + "\t");
-            //multiplying miles into kilometer
-			System.out.println(i*KILO);
+		//converting miles into kilometer and displaying it
+		for (int i = 1; i <= 10; i++) {
+			//printing miles and giving spaces
+			System.out.print(i + "\t");
+			//multiplying miles into kilometer
+			System.out.printf("%.3f \n", i*KILO);
 		}
 	}
 }
